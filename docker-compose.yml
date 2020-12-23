@@ -9,6 +9,8 @@ services:
       environment:
         - POSTGRES_USER=root
         - POSTGRES_PASSWORD=root
+        - PGPASSWORD=root
         - POSTGRES_DB=dive_into_dbms
+      working_dir: /workspace
       ports:
         - "8103:5432"
