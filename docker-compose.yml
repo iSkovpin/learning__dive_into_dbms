@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    postgres:
+      image: postgres:11.1-alpine
+      container_name: learning-dive-into-dbms-postgres
+      volumes:
+        - ~/.docker/learning-dive-into-dbms/postgres:/var/lib/postgresql/data
+        - .:/workspace
+      environment:
+        - POSTGRES_USER=root
+        - POSTGRES_PASSWORD=root
+        - POSTGRES_DB=dive_into_dbms
+      ports:
+        - "8103:5432"
