@@ -1,0 +1,5 @@
+CREATE TABLE T (
+    id INT PRIMARY KEY,
+    value INT UNIQUE
+);
+
